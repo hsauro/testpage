@@ -5,12 +5,7 @@
 Hello World
 
 <script  type = "text/javascript">
-function runCode() {
-    alert("how are you");  
-         }  
-}
-/* Author: Daniel Ellis 2022 */
-
+/* Author: Daniel Ellis 2022 */    
 export async function getgit (owner, repo, path) { 
     // A function to fetch files from github using the api 
     
@@ -29,8 +24,15 @@ export async function getgit (owner, repo, path) {
   return data;
 }
 
+    
+function runCode() {
+    alert("how are you today");  
+         }  
+    
   data = getgit ("hsauro", "testpage". "data.json")
   document.getElementById("demo").innerHTML = data
+    
+}
 </script>
     
 <input type = "button" onclick = "runCode()" value = "Get Data">  
