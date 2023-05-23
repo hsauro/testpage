@@ -30,14 +30,12 @@ async function getgit (owner, repo, path) {
     
 function runCode() {
     document.getElementById("msg").innerHTML = "The button has been clicked.";
-    let fetchRes = fetch(
-    'https://api.github.com/repos/hsauro/testpage/contents')
-    .then(res => res.json())
-    .then(data => console.log(data))
-    .error(e => console.error(e))
+    //let fetchRes = fetch(
+   // 'https://api.github.com/repos/hsauro/testpage/contents')
+
   
-    //data = getgit ("hsauro", "testpage", "data.json")
-    //document.getElementById("data").innerHTML = data
+    data = getgit ("hsauro", "testpage", "data.json")
+    document.getElementById("data").innerHTML = data
 }  
    
 </script>
