@@ -42,8 +42,11 @@ function runCode() {
    // 'https://api.github.com/repos/hsauro/testpage/contents')
 
     c1 = logJSONData();  
+    var json = JSON.parse(c1);
+    alert(json["name"])
     //data = getgit ("hsauro", "testpage", "data.json")
-    document.getElementById("data").innerHTML = c1.text()
+    
+    //document.getElementById("data").innerHTML = c1
   
 }  
    
