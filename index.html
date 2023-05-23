@@ -4,6 +4,8 @@
     
 Hello World
 
+<p id="msg"></p>
+    
 <script  type = "text/javascript">
 /* Author: Daniel Ellis 2022 */    
 /*export async function getgit (owner, repo, path) { 
@@ -26,8 +28,8 @@ Hello World
 
     
 function runCode() {
-    alert("how are you today");  
-         }  
+    document.getElementById("msg").innerHTML = "The button has been clicked.";
+}  
     
   //data = getgit ("hsauro", "testpage". "data.json")
   //document.getElementById("demo").innerHTML = data
