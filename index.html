@@ -29,7 +29,7 @@ async function getgit (owner, repo, path) {
 }
     
 async function logJSONData() {
-  const response = await fetch('https://api.github.com/repos/hsauro/testpage/contents');
+  const response = await fetch('https://api.github.com/repos/hsauro/testpage/contents/data.json');
   const jsonData = await response.json();
   console.log(jsonData);
   return jsonData;
