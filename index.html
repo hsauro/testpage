@@ -41,9 +41,9 @@ function runCode() {
     //let fetchRes = fetch(
    // 'https://api.github.com/repos/hsauro/testpage/contents')
 
-    c1 = logJSONData();  
-    var json = JSON.parse(c1);
-    alert(json["name"])
+    alert (await fetch('https://api.github.com/repos/hsauro/testpage/contents/data.json')).text());
+   //c1 = logJSONData();  
+   // alert(c1["name"])
     //data = getgit ("hsauro", "testpage", "data.json")
     
     //document.getElementById("data").innerHTML = c1
